@@ -1,13 +1,13 @@
 % \iffalse meta-comment
 %
 % File: grfext.dtx
-% Version: 2016/05/16 v1.2
+% Version: 2019/12/15 v1.3
 % Info: Manage graphics extensions
 %
 % Copyright (C)
 %    2007, 2010 Heiko Oberdiek
 %    2016-2019 Oberdiek Package Support Group
-%    https://github.com/ho-tex/oberdiek/issues
+%    https://github.com/ho-tex/grfext/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -23,7 +23,7 @@
 %
 % The Current Maintainers of this work are
 % Heiko Oberdiek and the Oberdiek Package Support Group
-% https://github.com/ho-tex/oberdiek/issues
+% https://github.com/ho-tex/grfext/issues
 %
 % This work consists of the main source file grfext.dtx
 % and the derived files
@@ -31,8 +31,8 @@
 %    grfext-test2.tex.
 %
 % Distribution:
-%    CTAN:macros/latex/contrib/oberdiek/grfext.dtx
-%    CTAN:macros/latex/contrib/oberdiek/grfext.pdf
+%    CTAN:macros/latex/contrib/grfext/grfext.dtx
+%    CTAN:macros/latex/contrib/grfext/grfext.pdf
 %
 % Unpacking:
 %    (a) If grfext.ins is present:
@@ -61,11 +61,9 @@
 %       pdflatex grfext.dtx
 %
 % Installation:
-%    TDS:tex/latex/oberdiek/grfext.sty
-%    TDS:doc/latex/oberdiek/grfext.pdf
-%    TDS:doc/latex/oberdiek/test/grfext-test1.tex
-%    TDS:doc/latex/oberdiek/test/grfext-test2.tex
-%    TDS:source/latex/oberdiek/grfext.dtx
+%    TDS:tex/latex/grfext/grfext.sty
+%    TDS:doc/latex/grfext/grfext.pdf
+%    TDS:source/latex/grfext/grfext.dtx
 %
 %<*ignore>
 \begingroup
@@ -82,7 +80,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)}
+\Msg{* Package: grfext 2019/12/15 v1.3 Manage graphics extensions (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -94,7 +92,7 @@
 This is a generated file.
 
 Project: grfext
-Version: 2016/05/16 v1.2
+Version: 2019/12/15 v1.3
 
 Copyright (C)
    2007, 2010 Heiko Oberdiek
@@ -114,7 +112,7 @@ This work has the LPPL maintenance status "maintained".
 
 The Current Maintainers of this work are
 Heiko Oberdiek and the Oberdiek Package Support Group
-https://github.com/ho-tex/oberdiek/issues
+https://github.com/ho-tex/grfext/issues
 
 
 This work consists of the main source file grfext.dtx
@@ -128,14 +126,14 @@ and the derived files
 \generate{%
   \file{grfext.ins}{\from{grfext.dtx}{install}}%
   \file{grfext.drv}{\from{grfext.dtx}{driver}}%
-  \usedir{tex/latex/oberdiek}%
+  \usedir{tex/latex/grfext}%
   \file{grfext.sty}{\from{grfext.dtx}{package}}%
-%  \usedir{doc/latex/oberdiek/test}%
+%  \usedir{doc/latex/grfext/test}%
 %  \file{grfext-test1.tex}{\from{grfext.dtx}{test1}}%
 %  \file{grfext-test2.tex}{\from{grfext.dtx}{test2}}%
   \nopreamble
   \nopostamble
-%  \usedir{source/latex/oberdiek/catalogue}%
+%  \usedir{source/latex/grfext/catalogue}%
 %  \file{grfext.xml}{\from{grfext.dtx}{catalogue}}%
 }
 
@@ -163,7 +161,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{grfext.drv}%
-  [2016/05/16 v1.2 Manage graphics extensions (HO)]%
+  [2019/12/15 v1.3 Manage graphics extensions (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -192,9 +190,9 @@ and the derived files
 % \GetFileInfo{grfext.drv}
 %
 % \title{The \xpackage{grfext} package}
-% \date{2016/05/16 v1.2}
+% \date{2019/12/15 v1.3}
 % \author{Heiko Oberdiek\thanks
-% {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
+% {Please report any issues at \url{https://github.com/ho-tex/grfext/issues}}}
 %
 % \maketitle
 %
@@ -390,7 +388,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@grfext.sty\endcsname
 \ProvidesPackage{grfext}%
-  [2016/05/16 v1.2 Manage graphics extensions (HO)]%
+  [2019/12/15 v1.3 Manage graphics extensions (HO)]%
 %    \end{macrocode}
 %
 % \subsection{Catcodes}
@@ -774,7 +772,7 @@ and the derived files
 \nofiles
 \documentclass{article}
 \usepackage[pdftex]{graphics}
-\usepackage{grfext}[2016/05/16]
+\usepackage{grfext}[2019/12/15]
 \usepackage{qstest}
 \IncludeTests{*}
 \LogTests{log}{*}{*}
@@ -945,17 +943,17 @@ and the derived files
 % \paragraph{Package.} This package is available on
 % CTAN\footnote{\CTANpkg{grfext}}:
 % \begin{description}
-% \item[\CTAN{macros/latex/contrib/oberdiek/grfext.dtx}] The source file.
-% \item[\CTAN{macros/latex/contrib/oberdiek/grfext.pdf}] Documentation.
+% \item[\CTAN{macros/latex/contrib/grfext/grfext.dtx}] The source file.
+% \item[\CTAN{macros/latex/contrib/grfext/grfext.pdf}] Documentation.
 % \end{description}
 %
 %
-% \paragraph{Bundle.} All the packages of the bundle `oberdiek'
+% \paragraph{Bundle.} All the packages of the bundle `grfext'
 % are also available in a TDS compliant ZIP archive. There
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
-% \item[\CTANinstall{install/macros/latex/contrib/oberdiek.tds.zip}]
+% \item[\CTANinstall{install/macros/latex/contrib/grfext.tds.zip}]
 % \end{description}
 % \emph{TDS} refers to the standard ``A Directory Structure
 % for \TeX\ Files'' (\CTANpkg{tds}). Directories
@@ -963,11 +961,11 @@ and the derived files
 %
 % \subsection{Bundle installation}
 %
-% \paragraph{Unpacking.} Unpack the \xfile{oberdiek.tds.zip} in the
+% \paragraph{Unpacking.} Unpack the \xfile{grfext.tds.zip} in the
 % TDS tree (also known as \xfile{texmf} tree) of your choice.
 % Example (linux):
 % \begin{quote}
-%   |unzip oberdiek.tds.zip -d ~/texmf|
+%   |unzip grfext.tds.zip -d ~/texmf|
 % \end{quote}
 %
 % \subsection{Package installation}
@@ -985,11 +983,9 @@ and the derived files
 % \begin{quote}
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
-%   grfext.sty & tex/latex/oberdiek/grfext.sty\\
-%   grfext.pdf & doc/latex/oberdiek/grfext.pdf\\
-%   test/grfext-test1.tex & doc/latex/oberdiek/test/grfext-test1.tex\\
-%   test/grfext-test2.tex & doc/latex/oberdiek/test/grfext-test2.tex\\
-%   grfext.dtx & source/latex/oberdiek/grfext.dtx\\
+%   grfext.sty & tex/latex/grfext/grfext.sty\\
+%   grfext.pdf & doc/latex/grfext/grfext.pdf\\
+%   grfext.dtx & source/latex/grfext/grfext.dtx\\
 % \end{tabular}^^A
 % }^^A
 % \sbox0{\t}^^A
@@ -1119,6 +1115,10 @@ and the derived files
 %     package \xpackage{graphicx}.
 %   \end{Version}
 %   \begin{Version}{2016/05/16 v1.2}
+%   \item
+%     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v1.3}
 %   \item
 %     Documentation updates.
 %   \end{Version}
