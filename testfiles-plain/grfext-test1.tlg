@@ -6,6 +6,4 @@ grfext: ....-..-.. v... Manage graphics extensions (HO)
 infwarerr: ....-..-.. v... Providing info/warning/error messages (HO)
 ) (../kvdefinekeys.sty
 kvdefinekeys: ....-..-.. v... Define keys (HO)
-(../ltxcmds.sty
-ltxcmds: ....-..-.. v... LaTeX kernel commands for general use (HO)
-)))
+))
